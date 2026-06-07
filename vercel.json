@@ -6,6 +6,19 @@
         {
           "key": "Link",
           "value": "</pay/pay.json>; rel=\"payment-method-manifest\""
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ]
+    },
+    {
+      "source": "/pay/pay.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
         }
       ]
     }
