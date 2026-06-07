@@ -3,13 +3,13 @@
     "short_name": "Ghostpass",
     "icons": [
         {
-            "src": "./icon.png",
+            "src": "/pay/icon.png",
             "sizes": "48x48",
             "type": "image/png"
         }
     ],
     "serviceworker": {
-        "src": "./sw.js",
+        "src": "/pay/sw.js",
         "use_cache": false
     }
 }
