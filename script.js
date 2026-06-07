@@ -9,14 +9,14 @@ function ghostpass() {
     btn.textContent = "Opening...";
     btn.classList.add("loading");
 
-    new PaymentRequest(
-        [{ supportedMethods: "https://ghostpass-six.vercel.app/pay/main.json", data: { url } }],
-        { total: { label: "_", amount: { value: "1", currency: "USD" } } }
-    ).show().catch(() => {
-        btn.textContent = "Open URL";
-        btn.classList.remove("loading");
-    });
-}
+new PaymentRequest(
+    [{ supportedMethods: "https://ghostpass-six.vercel.app/pay/main.json", data: { url } }],
+    { total: { label: "_", amount: { value: "1", currency: "USD" } } }
+).show().then(() => {
+    console.log("success");
+}).catch((err) => {
+    console.error("PaymentRequest error:", err.name, err.message);
+});
 
 function showError(msg) {
     const err = document.getElementById("error-msg");
