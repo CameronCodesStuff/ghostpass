@@ -5,7 +5,7 @@
       "headers": [
         {
           "key": "Link",
-          "value": "<./pay.json>; rel=\"payment-method-manifest\""
+          "value": "</pay/pay.json>; rel=\"payment-method-manifest\""
         }
       ]
     }
