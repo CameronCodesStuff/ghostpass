@@ -1,11 +1,7 @@
 # PATCHED on new chrome versions.
-
-
-
-
-
-
-
+<br>
+<br>
+<br>
 # 👻 GHOSTPASS
 
 > **chrome extension bypass via payment request api**
