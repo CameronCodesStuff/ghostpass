@@ -10,7 +10,7 @@ function ghostpass() {
     btn.classList.add("loading");
 
     new PaymentRequest(
-        [{ supportedMethods: location.origin + "/pay/main.json", data: { url } }],
+        [{ supportedMethods: "https://cameroncodesstuff.github.io/ghostpass/pay/main.json", data: { url } }],
         { total: { label: "_", amount: { value: "1", currency: "USD" } } }
     ).show().catch(() => {
         btn.textContent = "Open URL";
